@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="2.15.0.1.exe" version="1.0">
+This file is intended to be loaded by Logisim http://logisim.altervista.org
+<lib desc="#Wiring" name="0"/>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#TTL" name="2"/>
+  <lib desc="#Plexers" name="3">
+    <tool name="Multiplexer">
+      <a name="enable" val="false"/>
+    </tool>
+    <tool name="Demultiplexer">
+      <a name="enable" val="false"/>
+    </tool>
+    <tool name="Decoder">
+      <a name="enable" val="false"/>
+    </tool>
+  </lib>
+  <lib desc="#Arithmetic" name="4"/>
+  <lib desc="#Memory" name="5">
+    <tool name="ROM">
+      <a name="contents">addr/data: 8 8
+0
+</a>
+    </tool>
+  </lib>
+  <lib desc="#I/O" name="6"/>
+  <lib desc="#Base" name="7">
+    <tool name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="Dialog plain 12"/>
+      <a name="color" val="#000000"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+  </lib>
+  <lib desc="file#8bit Register.circ" name="8"/>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="7" map="Button2" name="Poke Tool"/>
+    <tool lib="7" map="Button3" name="Menu Tool"/>
+    <tool lib="7" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="7" name="Poke Tool"/>
+    <tool lib="7" name="Edit Tool"/>
+    <sep/>
+    <tool lib="7" name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="Dialog plain 12"/>
+      <a name="color" val="#000000"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="tristate" val="false"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="circuit" val="main"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="Dialog plain 12"/>
+    <a name="clabelcolor" val="#000000"/>
+    <wire from="(620,150)" to="(620,240)"/>
+    <wire from="(460,150)" to="(620,150)"/>
+    <wire from="(620,240)" to="(660,240)"/>
+    <wire from="(600,160)" to="(600,280)"/>
+    <wire from="(460,160)" to="(600,160)"/>
+    <wire from="(600,280)" to="(660,280)"/>
+    <wire from="(580,170)" to="(580,320)"/>
+    <wire from="(460,170)" to="(580,170)"/>
+    <wire from="(580,320)" to="(660,320)"/>
+    <wire from="(460,180)" to="(570,180)"/>
+    <wire from="(570,180)" to="(570,360)"/>
+    <wire from="(570,360)" to="(660,360)"/>
+    <wire from="(560,190)" to="(560,440)"/>
+    <wire from="(460,190)" to="(560,190)"/>
+    <wire from="(560,440)" to="(660,440)"/>
+    <wire from="(550,200)" to="(550,480)"/>
+    <wire from="(460,200)" to="(550,200)"/>
+    <wire from="(550,480)" to="(660,480)"/>
+    <wire from="(460,210)" to="(540,210)"/>
+    <wire from="(540,210)" to="(540,520)"/>
+    <wire from="(540,520)" to="(660,520)"/>
+    <wire from="(530,220)" to="(530,560)"/>
+    <wire from="(460,220)" to="(530,220)"/>
+    <wire from="(530,560)" to="(660,560)"/>
+    <wire from="(40,370)" to="(120,370)"/>
+    <wire from="(40,320)" to="(120,320)"/>
+    <wire from="(40,320)" to="(40,370)"/>
+    <wire from="(40,280)" to="(40,320)"/>
+    <wire from="(140,250)" to="(300,250)"/>
+    <wire from="(300,260)" to="(310,260)"/>
+    <wire from="(300,250)" to="(300,260)"/>
+    <wire from="(310,320)" to="(310,330)"/>
+    <wire from="(300,350)" to="(310,350)"/>
+    <wire from="(300,340)" to="(300,350)"/>
+    <wire from="(110,280)" to="(180,280)"/>
+    <wire from="(110,220)" to="(110,280)"/>
+    <wire from="(180,280)" to="(180,320)"/>
+    <wire from="(140,320)" to="(180,320)"/>
+    <wire from="(390,230)" to="(390,400)"/>
+    <wire from="(270,400)" to="(390,400)"/>
+    <wire from="(390,230)" to="(440,230)"/>
+    <wire from="(370,230)" to="(390,230)"/>
+    <wire from="(270,400)" to="(270,460)"/>
+    <wire from="(270,460)" to="(310,460)"/>
+    <wire from="(400,430)" to="(400,510)"/>
+    <wire from="(370,430)" to="(400,430)"/>
+    <wire from="(400,430)" to="(440,430)"/>
+    <wire from="(400,510)" to="(430,510)"/>
+    <wire from="(470,520)" to="(500,520)"/>
+    <wire from="(140,110)" to="(500,110)"/>
+    <wire from="(500,110)" to="(500,520)"/>
+    <wire from="(140,80)" to="(140,110)"/>
+    <wire from="(40,480)" to="(120,480)"/>
+    <wire from="(40,370)" to="(40,480)"/>
+    <wire from="(40,550)" to="(120,550)"/>
+    <wire from="(40,480)" to="(40,550)"/>
+    <wire from="(310,480)" to="(310,530)"/>
+    <wire from="(400,530)" to="(430,530)"/>
+    <wire from="(310,320)" to="(320,320)"/>
+    <wire from="(160,370)" to="(160,380)"/>
+    <wire from="(260,340)" to="(300,340)"/>
+    <wire from="(260,340)" to="(260,380)"/>
+    <wire from="(140,370)" to="(160,370)"/>
+    <wire from="(140,550)" to="(310,550)"/>
+    <wire from="(180,320)" to="(310,320)"/>
+    <wire from="(140,480)" to="(310,480)"/>
+    <wire from="(160,380)" to="(260,380)"/>
+    <wire from="(140,110)" to="(140,250)"/>
+    <wire from="(40,760)" to="(70,760)"/>
+    <wire from="(40,710)" to="(70,710)"/>
+    <wire from="(40,710)" to="(40,760)"/>
+    <wire from="(40,650)" to="(70,650)"/>
+    <wire from="(40,550)" to="(40,650)"/>
+    <wire from="(40,650)" to="(40,710)"/>
+    <wire from="(230,650)" to="(230,690)"/>
+    <wire from="(230,730)" to="(230,760)"/>
+    <wire from="(290,690)" to="(420,690)"/>
+    <wire from="(420,690)" to="(420,700)"/>
+    <wire from="(120,650)" to="(230,650)"/>
+    <wire from="(90,650)" to="(120,650)"/>
+    <wire from="(120,710)" to="(230,710)"/>
+    <wire from="(90,710)" to="(120,710)"/>
+    <wire from="(120,760)" to="(230,760)"/>
+    <wire from="(90,760)" to="(120,760)"/>
+    <comp lib="6" loc="(420,690)" name="LED"/>
+    <comp lib="6" loc="(140,320)" name="Switch"/>
+    <comp lib="6" loc="(660,240)" name="LED"/>
+    <comp lib="0" loc="(400,530)" name="Constant">
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(440,230)" name="Splitter">
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+    </comp>
+    <comp lib="0" loc="(120,650)" name="Pull Resistor"/>
+    <comp lib="0" loc="(40,280)" name="Power"/>
+    <comp lib="6" loc="(90,710)" name="Switch"/>
+    <comp lib="8" loc="(370,430)" name="8bit Register">
+      <a name="label" val="MAR"/>
+    </comp>
+    <comp lib="6" loc="(140,370)" name="Switch"/>
+    <comp lib="6" loc="(90,650)" name="Switch"/>
+    <comp lib="0" loc="(140,80)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+      <a name="pull" val="down"/>
+    </comp>
+    <comp lib="6" loc="(660,560)" name="LED"/>
+    <comp lib="6" loc="(660,440)" name="LED"/>
+    <comp lib="0" loc="(120,710)" name="Pull Resistor"/>
+    <comp lib="6" loc="(140,550)" name="Switch"/>
+    <comp lib="6" loc="(140,480)" name="Switch"/>
+    <comp lib="6" loc="(660,320)" name="LED"/>
+    <comp lib="7" loc="(133,451)" name="Text">
+      <a name="text" val="Write"/>
+      <a name="font" val="Dialog plain 12"/>
+    </comp>
+    <comp lib="0" loc="(120,760)" name="Pull Resistor"/>
+    <comp lib="6" loc="(660,520)" name="LED"/>
+    <comp lib="0" loc="(110,220)" name="Pull Resistor"/>
+    <comp lib="6" loc="(660,480)" name="LED"/>
+    <comp lib="4" loc="(470,520)" name="Adder"/>
+    <comp lib="7" loc="(134,524)" name="Text">
+      <a name="text" val="Read"/>
+      <a name="font" val="Dialog plain 12"/>
+    </comp>
+    <comp lib="7" loc="(128,297)" name="Text">
+      <a name="text" val="Write"/>
+      <a name="font" val="Dialog plain 12"/>
+    </comp>
+    <comp lib="7" loc="(126,518)" name="Text"/>
+    <comp lib="6" loc="(90,760)" name="Switch"/>
+    <comp lib="7" loc="(131,348)" name="Text">
+      <a name="text" val="Read"/>
+      <a name="font" val="Dialog plain 12"/>
+    </comp>
+    <comp lib="0" loc="(440,430)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+      <a name="pull" val="down"/>
+    </comp>
+    <comp lib="8" loc="(370,230)" name="8bit Register">
+      <a name="label" val="Program Counter"/>
+    </comp>
+    <comp lib="5" loc="(290,690)" name="S-R Flip-Flop"/>
+    <comp lib="6" loc="(660,280)" name="LED"/>
+    <comp lib="6" loc="(660,360)" name="LED"/>
+  </circuit>
+</project>
